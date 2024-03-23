@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-md-12">
+    <br>
+    <h2>Employees</h2>
+    <hr />
+    
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Employee Num</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Status</th>
+            <th>Course ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each employees}}
+            <tr>
+              <td>{{this.employeeNum}}</td>
+              <td>{{this.firstName}} {{this.lastName}}</td>
+              <td><a href="mailto:{{this.email}}">{{this.email}}</a></td>
+              <td>{{this.address}}</td>
+              <td>{{this.status}}</td>
+              <td>{{this.courseId}}</td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-12 text-center">
+  {{#unless employees}}
+    <strong>{{message}}</strong>
+  {{/unless}}
+</div>

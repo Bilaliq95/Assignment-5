@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Description Page</title>
+    <!-- Add your CSS styles or include external stylesheets here -->
+</head>
+<body>
+    <div class="description-container">
+        <h1>Code Explanation</h1>
+        <p>Document Structure and Metadata:
+
+<br/>
+<br/>
+External Stylesheets:
+External stylesheets are imported from Bootstrap. The first stylesheet (bootstrap.min.css) encompasses the foundational Bootstrap styles, while the second (/css/theme.css) introduces a custom theme. This separation allows for modular styling and ease of customization.
+
+<br/>
+<br/>
+Navigation Bar with Bootstrap Navbar Component:
+The navigation bar is constructed using Bootstrap's Navbar component within the nav element. It possesses a responsive design, facilitated by the integration of Bootstrap utility classes like navbar, navbar-expand-lg, and bg-light. The navigation links, such as "Display Employees," "Description," and "Add Employee," are organized and responsive, adapting to different screen sizes.
+<br/>
+<br/>
+Bootstrap Container for Layout:
+The container class establishes a Bootstrap container, defining a fixed-width layout for the main content. Containers aid in maintaining a consistent and visually appealing structure across various devices. This container encapsulates the main content of the webpage.
+<br/>
+<br/>
+Handlebars Placeholder for Dynamic Content:
+The body placeholder, leveraging Handlebars syntax, is indicative of a dynamic content insertion point. This approach aligns with server-side templating engines, suggesting that the actual content will be dynamically generated and injected into this designated space.
+<br/>
+<br/>
+Bootstrap JavaScript Libraries:
+script tags import JavaScript libraries from external sources. jQuery, Popper.js, and Bootstrap's JavaScript file enhance the webpage's functionality. These scripts are integral for features such as responsive navigation, modals, and other interactive elements.
+
+In summary, this HTML code combines HTML5 elements with Bootstrap's styling and interactive components. The detailed breakdown contains the specific functionalities and integrations that contribute to the overall structure, appearance, and dynamic capabilities of the webpage.</p>
+
+        <h1>Add Employee Form</h1>
+        <p>First Name Input:
+
+A text input field allowing users to enter their first name.
+Last Name Input:
+
+A text input field for users to input their last name.
+Includes a client-side validation function (checkLastName()) for additional verification.
+<br/>
+
+Email Input:
+
+A text input field designed specifically for email addresses.
+<br/>
+Address (Street) Input:
+
+A text input field allowing users to input their street address.
+<br/>
+Address (City) Input:
+
+A text input field for users to input their city of residence.
+<br/>
+Address (Province) Input:
+
+A text input field for users to input their province of residence.
+<br/>
+Employee Assistant Checkbox:
+
+A checkbox that users can toggle to indicate whether they are an employee assistant.
+<br/>
+Enrollment Status Radio Buttons:
+
+Radio buttons allowing users to select their enrollment status as either "Full Time" or "Part Time."
+<br/>
+Enrolled Class Dropdown:
+
+A dropdown menu (select input) providing options for different courses.
+<br/>
+Submit Button:
+
+A button that, when clicked, initiates the form submission, potentially adding a new student or employee to the system.</p>
+
+        <h1>checkLastName() Function</h1>
+        <p>The checkLastName() function returns a boolean value to the form:
+<br/>
+Returns true:
+
+If the last name validation is successful, meaning the last name is not empty, and it contains only alphabetic characters.
+This allows the form to be submitted.
+
+<br/>
+Returns false:
+
+If the last name is empty or contains non-alphabetic characters.
+This prevents the form from being submitted, indicating an issue with the last name input.
+The boolean value returned by checkLastName() influences the form's submission behavior based on the result of the last name validation.</p>
+    </div>
+</body>
+</html>
